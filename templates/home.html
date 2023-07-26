@@ -1,0 +1,15 @@
+{% extends 'nav.html' %}
+
+
+{% block title %}
+<title>Home Page</title>
+{% endblock %}
+
+
+{% block body %}
+{% if username %}
+<center><h1>Welcome to Home Page Mr/Ms {{username}}</h1></center>
+{% else %}
+<center><h1>Welcome to Home Page</h1></center>
+{% endif %}
+{% endblock %}

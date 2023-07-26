@@ -1,0 +1,20 @@
+{% extends 'nav.html' %}
+
+
+{% block title %}
+<title>Registration-page</title>
+{% endblock %}
+
+
+{% block body %}
+<center>
+    <h1>This Registration-page</h1><br>
+    <form  method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ usfo.as_p }}
+        {{ pfo.as_p }}
+        <input type="submit" value="Register">
+    </form>
+
+</center>
+{% endblock %}
